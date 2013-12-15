@@ -1,5 +1,5 @@
-Alterrnative Administration System: Categories/Products
-Version: 0.1
+Alterrnative Administration System
+Version: 0.2
 
 Download here: http://addons.oscommerce.com/info/8895
 
