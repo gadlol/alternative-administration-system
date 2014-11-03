@@ -6,7 +6,7 @@ Current stable version: 0.3
 
 ##### Installation is less than 5 minutes!
 
-![AAS screenshot](http://www.alternative-administration-system.com/photos/screenshots/listing-products-ajax-edit-name-thumb.jpg)
+![AAS screenshot](http://www.alternative-administration-system.com/photos/screenshots/listing-products-ajax-edit-name.jpg)
 
 * Features: http://www.alternative-administration-system.com/features
 * Demo: http://www.alternative-adminstration-system.com/demo
