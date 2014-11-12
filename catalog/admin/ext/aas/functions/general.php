@@ -219,15 +219,15 @@ function tep_aas_link($section = 'admin', $page = '', $parameters = '', $search_
 
     if($section!=='admin'){
 
-      if(defined(ENABLE_SSL)){
+      if(defined('ENABLE_SSL')){
       
         $link = ENABLE_SSL == true ? HTTPS_CATALOG_SERVER . DIR_WS_HTTPS_CATALOG : HTTP_CATALOG_SERVER . DIR_WS_CATALOG;
               
-      }elseif(defined(ENABLE_SSL_CATALOG)){ //for old version of osc
+      }elseif(defined('ENABLE_SSL_CATALOG')){ //for old version of osc
       
         if(ENABLE_SSL_CATALOG == true){
         
-          if(defined(DIR_WS_HTTPS_CATALOG)) $link=HTTPS_CATALOG_SERVER . DIR_WS_HTTPS_CATALOG;
+          if(defined('DIR_WS_HTTPS_CATALOG')) $link=HTTPS_CATALOG_SERVER . DIR_WS_HTTPS_CATALOG;
           else $link = HTTPS_CATALOG_SERVER . DIR_WS_CATALOG;
                 
         }else $link = HTTP_CATALOG_SERVER . DIR_WS_CATALOG;
@@ -236,12 +236,12 @@ function tep_aas_link($section = 'admin', $page = '', $parameters = '', $search_
 
     }else{
     
-      if(defined(ENABLE_SSL)){
+      if(defined('ENABLE_SSL')){
       
-        if(defined(DIR_WS_HTTPS_ADMIN)) $link = ENABLE_SSL == true ? HTTPS_SERVER . DIR_WS_HTTPS_ADMIN : HTTP_SERVER . DIR_WS_ADMIN;
+        if(defined('DIR_WS_HTTPS_ADMIN')) $link = ENABLE_SSL == true ? HTTPS_SERVER . DIR_WS_HTTPS_ADMIN : HTTP_SERVER . DIR_WS_ADMIN;
         else $link = ENABLE_SSL == true ? HTTPS_SERVER . DIR_WS_ADMIN : HTTP_SERVER . DIR_WS_ADMIN;
                       
-      }elseif(defined(ENABLE_SSL_CATALOG)){ //for old version of osc
+      }elseif(defined('ENABLE_SSL_CATALOG')){ //for old version of osc
       
         $link = ENABLE_SSL_CATALOG == true ? HTTPS_CATALOG_SERVER . DIR_WS_ADMIN : HTTP_SERVER . DIR_WS_ADMIN;
       
